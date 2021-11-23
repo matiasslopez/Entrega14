@@ -1,0 +1,52 @@
+nav {
+    background-color:#333;
+    padding:1em;
+    ul {
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+    li {
+      display:inline-block;
+    }
+  }
+button {
+    background-color: #535353;
+    color: #000;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+
+/* Utilizo el vector/list service-types para almacenar los servicios disponibles*/
+$service-types: 'chip_tunning', 'oil_change', 'filter';
+
+/*service tendrá los valores de cada uno */
+  @each $service in $service-types {
+    .#{$service}-icon { 
+          Background-image:  
+           url('../src/multimedia/#{$service}.png');
+     }
+ } 
+ 
+/* Modifico el formato de los botones segun el tipo sobrecargando 
+el color de fondo sobre el formato basico*/
+ .button-basic  {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-report  {
+  @extend .button-basic;
+  background-color: green;
+}
+
+.button-submit  {
+  @extend .button-basic;
+  background-color: blue;
+  color: white;
+}
