@@ -35,7 +35,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
               <div class="navbar-nav">
-                  <a href="./src/paginas/Products.html" class="nav-item nav-link active">Tienda</a>
+                  <a href="./src/paginas/Products.html" class="nav-item nav-link ">Tienda</a>
                   <a href="./src/paginas/Repros.html" class="nav-item nav-link">Reprogramaciones</a>
                   <a href="./src/paginas/ProductDetails.html" class="nav-item nav-link">Repuestos a medida</a>
                   <a href="./src/paginas/Services.html" class="nav-item nav-link">Servicio Tecnico</a>
@@ -46,7 +46,7 @@
   
   </header> 
 <section> <!--*************** INTRO ***************-->
-  <div style="text-align: center;">
+  <div style="text-align: center;padding-top: 30px;">
     <h2>MAS QUE UN TALLER... TU TALLER DE CONFIANZA.</h2>
     </div>
   <div class="d-flex justify-content-center">
@@ -95,68 +95,62 @@
     </div>
   </div>
   </section>
-    <section><!-- *******************************Quienes somos*********************************/ -->
-    <div style="text-align: center;">
-    <h2>QUIENES SOMOS</h2>
+  <section><!-- *******************************Quienes somos*********************************/ -->
+      <div style="text-align: center;">
+      <h2>QUIENES SOMOS</h2>
+      </div>
+      <div  style="text-align: center; padding-left: 50px; padding-right: 50px;">
+        <p >Somos un equipo de apasionados por la mecanica y la innovación, desde nuestro Laboratorio de Electrónica y Mecánica Automotriz hace mas de 10 años brindamos soluciones de Mecánica y Electrónica para particulares y empresas. Reparación de vehículos, módulos de control, inyeccion electro mecanica, potenciacion, kit de turbo y trabajos especiales en acero inoxidable multiples de escape..</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/X3AnkVzJHMU" title="YouTube video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/X3AnkVzJHMU" title="YouTube video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+      <div class="container">
+      <button type="button" class="button" data-toggle="modal" data-target="#myModal">
+        Whatsapp
+      </button>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title">Telefono de contacto</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+            Aqui se abrira la aplicación de Whatsapp con el telefono configurado
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="paragraph">Hace más de diez años que nuestra empresa cuida con esmero los vehículos de nuestros clientes.</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/X3AnkVzJHMU" title="YouTube video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/X3AnkVzJHMU" title="YouTube video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </section>
-                  <div class="container">
-                  <button type="button" class="button" data-toggle="modal" data-target="#myModal">
-                    Whatsapp
-                  </button>
-                  <div class="modal" id="myModal">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                      
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                          <h4 class="modal-title">Telefono de contacto</h4>
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                        
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                          Aqui se abrira la aplicación de Whatsapp con el telefono configurado
-                        </div>
-                        
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
                 
+<!-- *******************************Nuestros servicios*********************************/  -->
 
-                <!-- *******************************Nuestros servicios*********************************/  -->
-
-                <section class="servicios">
-                  <div>
-                    <h2>NUESTROS SERVICIOS</h2>
-                  </div>
-                  <div class="servicios-lista" >
-                    <ul class="a">
-                      <li>Diagnósticos </li>
-                      <li>Pre VTV</li>
-                      <li>Cambio de aceite y filtros</li>
-                      <li>Reprogramación</li>
-                      <li>Construcucción de custom de piezas</li>
-                    </ul>
-                    <button class="btn-appointment">
-                      <a href="./src/paginas/appointment.html">Agendar turno</a>
-                  </div>
-                </section>
+    <section class="servicios">
+      <div><h2>NUESTROS SERVICIOS</h2></div>
+      <div class="servicios-lista" >
+        <ul class="a">
+        <li>Diagnósticos </li>
+        <li>Pre VTV</li>
+        <li>Cambio de aceite y filtros</li>
+        <li>Reprogramación</li>
+        <li>Construcucción de custom de piezas</li>
+        </ul>
+        <button class="btn-appointment">
+        <a href="./src/paginas/appointment.html">Agendar turno</a>
+      </div>
+    </section>
 <!-- *******************************Galeria*********************************/  -->
-                <section class="galeria">
-                    <div class="" style="background-color:#ccc;">
-                      <h2>Column 3</h2>
-                      <p>Some text..</p>
+    <section class="galeria">
+    <div class="" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
                     </div>
                     <div class="" style="background-color:#aaa;">
                       <h2>Column 1</h2>
@@ -171,43 +165,138 @@
                       <p>Some text..</p>
                     </div>
                 </section>
-<!-- *******************************Formas de Pago*********************************/  -->
-                <section class="formaspago">
-                  <div>
-                    <h2>FORMAS DE PAGO</h2>
-                  </div>
-                  <div>
-                    <ul class="b">
-                      <li >
-                      <img src="./src/multimedia/visa-logo.png" width="70">
-                      </li>
-                      <li >
-                      <img src="./src/multimedia/mastercard-logo.png" width="70">
-                      </li >
-                      <li>
-                      <img src="./src/multimedia/mp-logo.png" width="70">
-                      </li>
-                      <li>
-                        <img src="./src/multimedia/pago-contado-logo.png" width="70">
-                      </li>
-                    </ul>
+<!-- *******************************Nuestros Clientes*********************************/  -->
+    <section >
+      <div style="text-align: center;">
+      <h2>NUESTROS CLIENTES OPINAN</h2>
+      </div>
+      <div class="slideshow-container">
 
-                  </div>
-              </section>
- <section>
-  <div id="menu-outer">
-  <div class="table">
-    <ul id="horizontal-list">
-      <li><a href="#"><img src="./src/multimedia/mastercard-logo.png" alt="list item 1" width="70"/></a></li>
-      <li><a href="#"><img src="./src/multimedia/mastercard-logo.png" alt="list item 2" width="70" /></a></li>
-      <li><a href="#"><img src="./src/multimedia/mastercard-logo.png" alt="list item 3" width="70"/></a></li>
-      <li><a href="#"><img src="./src/multimedia/mastercard-logo.png" alt="list item 4" width="70"/></a></li>
+        <div class="mySlides">
+          <q>Los mejores lejos, no tienen nada prearmado, cada repro se hace sobre cada auto, por eso los elegí. Mi auto mejoró muchísimo!</q>
+          <p class="author">- Andres</p>
+        </div>
+        
+        <div class="mySlides">
+          <q>Más que satisfecho con el trabajo que me hicieron y la atención que dan...Un trabajo de precisión con detalles que no se ven hoy en la calle. Muchas gracias por todo.</q>
+          <p class="author">- Patricia</p>
+        </div>
+ 
+        <div class="mySlides">
+          <q>Lleve hacer un trabajo y quede mas que satisfecho , excelente atención..</q>
+          <p class="author">- Ernesto</p>
+        </div>      
+        
+        <div class="mySlides">
+          <q>Excelente trabajo, y por sobre todo la atencion y paciencia de Eduardo en aclararme algunas dudas que tenia!</q>
+          <p class="author">- Tomas</p>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+      </section> 
+<!-- *******************************Formas de Pago*********************************/  -->
+    <section >
+    <div style="text-align: center;">
+    <h2>FORMAS DE PAGO</h2>
+    </div>
+    <div class="formaspago">
+    <ul class="formaspago-lista">
+    <li class="horizontal">
+    <img src="./src/multimedia/visa-logo.png" width="70"></li>
+    <li class="horizontal">
+    <img src="./src/multimedia/mastercard-logo.png" width="70"></li >
+    <li class="horizontal">
+    <img src="./src/multimedia/mp-logo.png" width="70"></li>
+    <li class="horizontal">
+    <img src="./src/multimedia/pago-contado-logo.png" width="70">
+    </li>
     </ul>
-  </div>
-  </div>
- </section>               
+    </div>
+    </section>    
+<!-- ******************************* CIERRE *********************************/  -->
+              <section class="cierre">
+              <Div class="footer-links-container">
+              <div class="footer-links">
+                <div class="item first">
+                <h2> Nosotros </h2>
+                <p>
+                  <a href="https://facebook.com">PIE EDITORIAL</a><br>
+                  <a href="https://facebook.com">MAPA DEL SITIO WEB</a><br>
+                  <a href="https://facebook.com">AYUDA</a><br>
+                  <a href="https://facebook.com">TÉRMINOS Y CONDICIONES</a><br>
+                  <a href="https://facebook.com">AVISO LEGAL</a><br>
+                  <a href="https://facebook.com">GARANTÍA MOTOR</a><br>
+                  <a href="https://facebook.com">GARANTÍA PRODUCTO</a><br>
+              </p>  
+              </div>
+                <div class="item second">
+                  <h2> Tachuela internacional </h2>
+                  <p>
+                <a href=index.html>Argentina</a><br>
+                <a href=index.html>Brasil</a><br>
+                <a href=index.html>Bolivia</a><br>
+                <a href=index.html>Chile</a><br>
+                <a href=index.html>España</a><br>
+                <a href=index.html>Paraguay</a><br>
+                <a href=index.html>Peru</a><br>
+                <a href=index.html>Uruguay</a><br>
+                </p>
+                </div>
+                <div class="item third">
+                  <h2> Tachuela online </h2>
+                  <p>
+                    <a href="https://facebook.com">Facebook</a><br>
+                    <a href="https://twitter.com/home">Twitter</a><br>
+                    <a href="https://Instagram.com">Instagram</a><br>
+                    <a href="https://Youtube.com">Youtube</a><br>
+                    <a href="https://Newsletter.com">Newsletter</a><br>
+                  </p>  
+                </div>
+              </div>
+              </div>
+              </section>
   <footer>MSL 2021
     <div class="zoom">  <img src="./src/multimedia/m.jpg" > </div>
   </footer>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
 </body>
 </html>
