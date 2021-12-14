@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../../CSS/styles.CSS" />
+	<link rel="stylesheet" href="../../css/style.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
+	<script>
+		function validateForm() {
+		  var x = document.forms["myForm"]["fname"].value;
+		  var y = document.forms["myForm"]["lname"].value;
+		  var z = document.forms["myForm"]["lPhone"].value;
+		  if (x == "" || x == null || y == "" || y == null || z == "" || z == null) {
+			alert("los campos Nombre, Apellido y Telefono no pueden estar vacios");
+			return false;
+		  }
+		}
+		
+		</script>
     <title>:: Tachuela Racing:Appoitments ::</title>
 </head>
 <body>
@@ -21,29 +32,32 @@
 		  <div class="container-fluid">
 			<div class="logo">
 			  <a href="../.././index.html">
-				<img src="../multimedia/logo.png" >
+				<img src="../multimedia/logo.jpg" >
 			  </a>
 			  </div>
-			  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-				  <span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarCollapse">
-				  <div class="navbar-nav">
-					  <a href="Products.html" class="nav-item nav-link">Tienda</a>
-					  <a href="Repros.html" class="nav-item nav-link">Reprogramaciones</a>
-					  <a href="ProductDetails.html" class="nav-item nav-link">Repuestos a medida</a>
-					  <a href="Services.html" class="nav-item nav-link">Servicio Tecnico</a>
-				  </div>
+			<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+			  <div class="navbar-nav">
+			  <a href="Products.html" class="nav-item nav-link">Tienda</a>
+			  <a href="Repros.html" class="nav-item nav-link">Reprogramaciones</a>
+			  <a href="ProductDetails.html" class="nav-item nav-link">Repuestos a medida</a>
+			  <a href="Services.html" class="nav-item nav-link">Servicio Tecnico</a>
 			  </div>
+			 </div>
 		  </div>
 	  </nav>
 	  
 	</header>
-	  <form action="Contact.html">
+	<div class="container"  style="text-align: center;padding-top: 30px;">
+	  <form name="myForm" action="../../index.html"  onsubmit="return validateForm()" method="post" required>
 		<label for="fname">Nombre:</label>
   		<input type="text" id="fname" name="fname"><br><br>
   		<label for="lname">Apellido:</label>
   		<input type="text" id="lname" name="lname"><br><br>
+		<label for="lname">Telefono:</label>
+  		<input type="text" id="lPhone" name="lPhone"><br><br>  
 		<div class="dropdown">
 			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
 			  Seleccione el motivo
@@ -54,14 +68,15 @@
 			  <a class="dropdown-item" href="#">Reclamo</a>
 			  <a class="dropdown-item" href="#">Turno</a>
 			</div>
-		  </div>
-	  
+		</div>
 		<br>		<br>
 		<label><input type="checkbox" id="cbox1" value="first_checkbox"> Aun no tengo cuenta</label>
 		<input type="submit" value="Enviar">
-		<input type="reset" value="Borrar todo">	  
-
+		<input type="reset" value="Borrar todo">	 
+   
+	</form>
+	</div>	  
 	<footer>MSL 2021
-	<div class="zoom">  <img src="../multimedia/m.png" > </div>
+	<div class="zoom">  <img src="../multimedia/m.jpg" > </div>
 	</footer></body>
 </html>

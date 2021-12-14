@@ -264,9 +264,13 @@ img{
   opacity: 1;
   transition: 0s
 }
+
 /*Carousel de texto*/
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+body {font-family: Verdana, sans-serif; 
+
+  background: linear-gradient(141deg, #ffffff 0%, #ededed 40%, #999999 75%);
+  margin:0}
 
 /* Slideshow container */
 .slideshow-container {
@@ -338,3 +342,60 @@ q {font-style: italic;}
 
 /* Add a blue color to the author */
 .author {color: cornflowerblue;}
+
+.glow {
+  font-size: 80px;
+  color: #073763;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000073, 0 0 40px #000073, 0 0 50px #000073, 0 0 60px #000073, 0 0 70px #000073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #af4da6, 0 0 40px #af4da6, 0 0 50px #af4da6, 0 0 60px #af4da6, 0 0 70px #af4da6, 0 0 80px #af4da6;
+  }
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+}
+
+/*whatsapp button*/
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/*sticky*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}

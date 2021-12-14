@@ -23,7 +23,6 @@
   <!-- *******************************Header*********************************/ -->
   <header >
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
       <div class="container-fluid">
         <div class="logo">
           <a href=index.html>
@@ -33,6 +32,7 @@
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
               <span class="navbar-toggler-icon"></span>
           </button>
+          
           <div class="collapse navbar-collapse" id="navbarCollapse">
               <div class="navbar-nav">
                   <a href="./src/paginas/Products.html" class="nav-item nav-link ">Tienda</a>
@@ -45,8 +45,9 @@
   </nav>
   
   </header> 
+  
 <section> <!--*************** INTRO ***************-->
-  <div style="text-align: center;padding-top: 30px;">
+  <div style="text-align:center;padding-top: 30px;">
     <h2>MAS QUE UN TALLER... TU TALLER DE CONFIANZA.</h2>
     </div>
   <div class="d-flex justify-content-center">
@@ -94,7 +95,12 @@
       </button>
     </div>
   </div>
+
   </section>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a href="https://api.whatsapp.com/send?phone=54113690368&text=Hola%21%20Quisiera%20mas%20informaci%C3%B3n%20sobre%20Repuestos%202." class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
   <section><!-- *******************************Quienes somos*********************************/ -->
       <div style="text-align: center;">
       <h2>QUIENES SOMOS</h2>
@@ -225,9 +231,9 @@
     </section>    
 <!-- ******************************* CIERRE *********************************/  -->
               <section class="cierre">
-              <Div class="footer-links-container">
-              <div class="footer-links">
-                <div class="item first">
+              <Div class="footer-links-container" style="text-align: left; padding-left: 100px; padding-right: 50px;">
+              <div class="footer-links ">
+                <div class="item first ">
                 <h2> Nosotros </h2>
                 <p>
                   <a href="https://facebook.com">PIE EDITORIAL</a><br>
@@ -239,22 +245,22 @@
                   <a href="https://facebook.com">GARANTÍA PRODUCTO</a><br>
               </p>  
               </div>
-                <div class="item second">
+                <div class="item second" >
                   <h2> Tachuela internacional </h2>
-                  <p>
-                <a href=index.html>Argentina</a><br>
-                <a href=index.html>Brasil</a><br>
-                <a href=index.html>Bolivia</a><br>
-                <a href=index.html>Chile</a><br>
-                <a href=index.html>España</a><br>
-                <a href=index.html>Paraguay</a><br>
-                <a href=index.html>Peru</a><br>
-                <a href=index.html>Uruguay</a><br>
+                  <p style="text-align: left; padding-left: 10px;">
+                <a href="./src/paginas/underConstruction.html">Argentina</a><br>
+                <a href="./src/paginas/underConstruction.html">Brasil</a><br>
+                <a href="./src/paginas/underConstruction.html">Bolivia</a><br>
+                <a href="./src/paginas/underConstruction.html">Chile</a><br>
+                <a href="./src/paginas/underConstruction.html">España</a><br>
+                <a href="./src/paginas/underConstruction.html">Paraguay</a><br>
+                <a href="./src/paginas/underConstruction.html">Peru</a><br>
+                <a href="./src/paginas/underConstruction.html">Uruguay</a><br>
                 </p>
                 </div>
                 <div class="item third">
                   <h2> Tachuela online </h2>
-                  <p>
+                  <p style="text-align: left; padding-left: 10px;">
                     <a href="https://facebook.com">Facebook</a><br>
                     <a href="https://twitter.com/home">Twitter</a><br>
                     <a href="https://Instagram.com">Instagram</a><br>
@@ -270,9 +276,9 @@
   </footer>
 
   <script>
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
     var slideIndex = 1;
     showSlides(slideIndex);
-    
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
@@ -296,6 +302,31 @@
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
     }
+
+    $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
     </script>
     
 </body>
